@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE NO1 GSD PUPPY</title>
+  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-cover bg-center min-h-screen flex flex-col items-center justify-center" style="background-image: url('germanshepherd-bg.jpg');">
+
+  <div id="heading-section" class="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 w-full max-w-md text-center">
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">THE NO1 GSD PUPPY</h1>
+    <button id="go-to-auth" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Sign In</button>
+  </div>
+
+  <div id="auth-section" class="hidden bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 w-full max-w-sm">
+    <div class="flex justify-between mb-4">
+      <button id="show-login" class="text-blue-500 font-semibold">Login</button>
+      <button id="show-signup" class="text-gray-500">Sign Up</button>
+    </div>
+    <form id="auth-form" class="flex flex-col gap-4">
+      <input type="email" id="email" placeholder="Email" required class="border p-2 rounded" />
+      <input type="password" id="password" placeholder="Password" required class="border p-2 rounded" />
+      <button type="submit" class="bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Login</button>
+    </form>
+    <div id="welcome" class="hidden text-center mt-4"></div>
+  </div>
+
+  <div id="dog-breeds-section" class="hidden w-full max-w-2xl p-6 bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl mt-10">
+    <h2 class="text-2xl font-semibold mb-4 text-center text-gray-800">Choose Your Favorite Dog Breed</h2>
+    <div id="breed-list" class="grid grid-cols-2 gap-4">
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="labrador">Labrador Retriever</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="germanshepherd">German Shepherd</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="goldenretriever">Golden Retriever</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="bulldog">Bulldog</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="poodle">Poodle</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="beagle">Beagle</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="pitbull">Pit Bull Terrier</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="boxer">Boxer</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="doberman">Doberman Pinscher</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="rottweiler">Rottweiler</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="weimaraner">Weimaraner</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="collie">Collie</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="malinois">Belgian Malinois</div>
+      <div class="border p-4 rounded shadow hover:bg-gray-100 cursor-pointer" data-breed="standardpoodle">Standard Poodle</div>
+    </div>
+    <div class="mt-6 text-center">
+      <button id="back-to-auth" class="text-sm text-blue-500 hover:underline">Back to Login / Signup</button>
+    </div>
+  </div>
+
+  <div id="breed-images-section" class="hidden w-full max-w-4xl p-6 bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl mt-10">
+    <h2 id="breed-title" class="text-2xl font-semibold mb-4 text-center text-gray-800"></h2>
+    <div id="breed-images" class="grid grid-cols-2 md:grid-cols-3 gap-4 justify-center"></div>
+    <div class="mt-6 text-center">
+      <button id="back-to-breeds" class="text-sm text-blue-500 hover:underline">Back to Breeds</button>
+    </div>
+  </div>
+
+  <div id="image-detail-section" class="hidden w-full max-w-4xl p-6 bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl mt-10">
+    <h2 class="text-2xl font-semibold mb-4 text-center text-gray-800">Selected Image</h2>
+    <div class="flex flex-col items-center">
+      <img id="selected-image" src="" alt="Selected Dog" class="w-full max-w-xl rounded mb-4 shadow" />
+      <p id="image-breed-info" class="text-gray-700 text-center">Information about the selected dog breed will appear here.</p>
+    </div>
+    <div class="mt-6 text-center">
+      <button id="back-to-gallery" class="text-sm text-blue-500 hover:underline">Back to Gallery</button>
+    </div>
+  </div>
+
+</body>
+</html>
